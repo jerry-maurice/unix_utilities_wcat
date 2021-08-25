@@ -6,9 +6,16 @@
 //
 
 #include <stdio.h>
+#include <stdlib.h>
+#include "wcat.h"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+    // check if argument is present
+    if(argc > 1){
+        wcat_function(argc, argv);
+    }
+    else{
+        exit(0); 
+    }
     return 0;
 }
